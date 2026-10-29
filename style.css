@@ -194,3 +194,19 @@ section > p.intro { color: var(--muted); font-size: 18px; line-height: 1.6; max-
   *, *::before { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- BarcaVeloxMT, the real-life app ---------- */
+
+.mt-card {
+  display: flex; align-items: center; gap: 16px; width: 100%; max-width: 560px;
+  margin-top: 28px; padding: 16px; border-radius: 22px; text-align: left; text-decoration: none;
+  background: var(--card); border: 1px solid var(--line);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.mt-card:hover { transform: translateY(-2px); border-color: rgba(79, 195, 234, 0.45); }
+.mt-card img { width: 72px; height: 72px; border-radius: 17px; flex: none; background: #fff; }
+.mt-card strong { display: block; font-size: 17px; margin-bottom: 4px; }
+.mt-card span { display: block; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.mt-card em { display: inline-block; margin-top: 10px; font-style: normal; font-weight: 700; font-size: 15px; color: var(--sea-bright); }
+.mt-section .mt-card { margin-top: 8px; }
